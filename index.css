@@ -17,13 +17,13 @@ body{
   border:3px solid white;
 } */
 h1{
-  font-size: 3rem; /* 48px */
+  font-size: 3rem; 
   line-height: 72px;
   margin-bottom: 0px;
   margin-top: 46px;
 }
 h3{
-  font-size: 2rem; /*32px; */
+  font-size: 2rem; 
   line-height: 48px;
   margin-bottom: 0px;
 }
@@ -44,8 +44,11 @@ button{
   background-color: #9E4770;
   border-radius: 10px;
   line-height: 72px; 
-  font-size: 3rem;  /*48px;*/
+  font-size: 3rem;  
   cursor: pointer;
+}
+buttons.dark{
+  background-color: #bb7c99;
 }
 .product-buttons{
   display: flex;
@@ -56,13 +59,27 @@ button{
 .highlight:hover{
   border:2px solid #38BDF8;
 }
+.icon-btn{
+  width: 180px;
+  height:80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
 .points-box{
+  display:flex;
+  align-items: center;
+  flex-wrap: wrap;
   width: 805px;
-  height: 67px;
+  height: 65px;
   background-color: #44354A;
   border-radius: 50px;
   border:1px solid #44354A;
   margin: 0px auto;
+  font-size: 2rem;
+  padding-left: 10px;
+  column-gap: 0px;
 }
 .total{
   display:flex;
@@ -70,11 +87,17 @@ button{
   column-gap: 16px;
   margin-bottom: 70px;
 }
+
 .total-box{
   width: 389px;
-  height: 86px;
+  height: 70px;
   background-color: #44354A;
   border-radius: 50px;
   border:1px solid #44354A;
   margin: 0px auto;
+  font-size: 2.5rem;
+  font-weight: 700;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
