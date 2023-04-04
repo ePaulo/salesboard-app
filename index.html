@@ -17,10 +17,24 @@
   </head>
   <body>
     <div class="container">
+      <div class="toggle-btn">
+        <input
+          type="checkbox"
+          class="checkbox"
+          id="checkbox"
+          data-user-selection="checkboxtoggle"
+        />
+        <label for="checkbox" class="toggle-label">
+          <i class="fa-solid fa-sun"></i>
+          <i class="fa-solid fa-moon"></i>
+          <span class="ball"></span>
+        </label>
+      </div>
+
       <button class="reset-btn">
         <i
           class="fa-sharp fa-solid fa-arrow-rotate-right"
-          data-button="reset"
+          data-user-selection="reset"
         ></i>
       </button>
       <header>
@@ -32,10 +46,10 @@
         />
       </header>
       <div class="product-buttons">
-        <button id="star-product" class="highlight" data-button="star">
+        <button id="star-product" class="highlight" data-user-selection="star">
           ⭐
         </button>
-        <button id="fire-product" class="highlight" data-button="fire">
+        <button id="fire-product" class="highlight" data-user-selection="fire">
           🔥
         </button>
       </div>

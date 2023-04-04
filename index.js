@@ -14,7 +14,7 @@ let productB = {
 
 const starProductBtn = document.getElementById("star-product");
 const fireProductBtn = document.getElementById("fire-product");
-const resetBtn = document.getElementById("reset-btn");
+// const resetBtn = document.getElementById("reset-btn");
 
 const salesAndIncentivesDomElements = {
   soldProducts: document.getElementById("sold-products"),
@@ -33,7 +33,6 @@ let salesAndIncentivesData = {
 function resetData() {
   localStorage.clear();
   renderData();
-  console.table("resetData");
 }
 
 function updateSoldAndAchievementCounts() {
@@ -48,7 +47,7 @@ handleClick();
 function handleClick() {
   document.addEventListener("click", (e) => {
     e.preventDefault();
-    switch (e.target.dataset.button) {
+    switch (e.target.dataset.userSelection) {
       case "star":
         udpateProductDataAndRender(productA);
         break;
@@ -58,10 +57,19 @@ function handleClick() {
       case "reset":
         resetData();
         break;
+      case "checkboxtoggle":
+        // logic for the toggle function
+        toggleLightDarkMode();
+        break;
       default:
         break;
     }
   });
+}
+
+// Console is not printing the error.
+function toggleLightDarkMode() {
+  console.log("toggle function");
 }
 
 function udpateProductDataAndRender(product) {
